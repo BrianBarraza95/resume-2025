@@ -1,5 +1,12 @@
 # resume-2025
 
+Project
+
+This project was created in Claude AI as a test project to code a one page resume with a mobile breakpoint.
+
+
+
+
 Claude Resume Issues
 Couldn't do the more expressive timeline
   Simplified the whole thing to a straight timeline
