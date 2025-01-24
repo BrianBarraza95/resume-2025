@@ -35,7 +35,7 @@ Proudest moment of this project was finally figuring out how to get an image int
 BONUS: Claude edits in another tool
 
 I brought my code into Sublime and ammended the code for the placeholder code to reference an image in a folder that wasn't the same as the text file.
-  <img src="Img/hero-image.jpg" alt="Brian's profile" class="main-image">
+  img src="Img/hero-image.jpg" alt="Brian's profile" class="main-image"
 
 ----
 
