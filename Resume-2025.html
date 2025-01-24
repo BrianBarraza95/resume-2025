@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quando&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fffdf3;
+        }
+
+        .header {
+            margin-bottom: 3rem;
+            text-align: left;
+            width: 100%;
+        }
+
+        .header h1 {
+            font-family: 'Quando', serif;
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            margin-bottom: 2rem;
+            font-weight: normal;
+            width: 100%;
+            line-height: 1.1;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .image-container {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .skills, .interests {
+            background: #f0f0f0;
+            padding: 1.5rem;
+            height: 500px;
+        }
+
+        .skills h2, .interests h2 {
+            font-family: 'Quando', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .skills ul, .interests ul {
+            list-style: none;
+        }
+
+        .skills li, .interests li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .timeline {
+            margin-top: 3rem;
+            border-top: 2px dotted black;
+            padding-top: 2rem;
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            gap: 2rem;
+        }
+
+        .location {
+            text-align: left;
+        }
+
+        .location h3 {
+            font-family: 'Quando', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .location p {
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .main-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .image-container {
+                height: auto;
+                aspect-ratio: 4/3;
+                order: -1;
+            }
+
+            .skills, .interests {
+                height: auto;
+                min-height: auto;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .location h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>What's up, I'm Brian!</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Animation</li>
+                <li>Adobe Creative Suite</li>
+                <li>Design Strategy</li>
+                <li>UX Research</li>
+                <li>Prototyping</li>
+                <li>Human Centered Design</li>
+                <li>Thinking</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+
+        <div class="image-container">
+            <img src="Img/hero-image.jpg" alt="Brian's profile" class="main-image">
+        </div>
+
+        <div class="interests">
+            <h2>Interests</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Creating</li>
+                <li>Personal Development</li>
+                <li>Human Experience</li>
+                <li>Running</li>
+                <li>Climbing</li>
+                <li>Philosophy</li>
+                <li>Psychology</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="location">
+            <h3>El Paso</h3>
+            <p>Cross Country</p>
+            <p>Track & Field</p>
+            <p>Ars Poetica</p>
+        </div>
+        <div class="location">
+            <h3>Houston</h3>
+            <p>Bachelors in Kinesiology</p>
+            <p>Art Minor</p>
+            <p>Masters in Sports Administration</p>
+        </div>
+        <div class="location">
+            <h3>Boulder & CU</h3>
+            <p>Pro Running</p>
+            <p>Graphic Design</p>
+            <p>Web Design</p>
+            <p>Animation</p>
+            <p>Masters Strategic Communication Design</p>
+        </div>
+    </div>
+</body>
+</html>
